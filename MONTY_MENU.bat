@@ -1,0 +1,25 @@
+REM So that the prompt disappears
+ECHO OFF 
+
+CLS
+
+:MENU
+ECHO.
+ECHO ......................
+ECHO WELCOME TO MONTY MENU!
+ECHO ......................
+ECHO.
+ECHO 0 - OPEN NOTES
+ECHO 1 - OPEN1
+ECHO 2 - OPEN2
+ECHO 3 - OPEN3
+ECHO 4 - OPEN4
+ECHO 5 - OPEN5
+ECHO.
+SET /P INPUT=0, 1, 2, 3, 4 OR 5 THEN PRESS ENTER:
+IF %INPUT%==0 GOTO NOTES
+:NOTES
+ECHO OPENING NOTEPAD
+NOTEPAD "C:\Users\Monty\Desktop\notes.txt"
+CLS
+GOTO MENU
